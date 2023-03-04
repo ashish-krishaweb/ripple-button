@@ -29,4 +29,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.WORKFLOW_NPM_TOKEN }}
         with:
-          publish: pnpm publish --access public
+          publish: pnpm run build && pnpm publish --access public

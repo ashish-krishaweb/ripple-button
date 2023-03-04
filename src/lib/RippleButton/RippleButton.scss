@@ -1,4 +1,4 @@
-button{
+button.simple-btn{
     position: relative;
     overflow: hidden;
     border: none !important;
@@ -21,7 +21,7 @@ button{
     --failed-ripple: hsl(22, 100%, 70%);
 }
 
-button span{
+button.simple-btn span{
     --width: 0px;
     --height: 0px;
     width: 0;
@@ -50,25 +50,25 @@ button span{
     }
 }
 
-button.primary{
+button.simple-btn.primary{
     background-color: var(--primary);
     span {
         background-color: var(--primary-ripple);
     }
 }
-button.secondary{
+button.simple-btn.secondary{
     background-color: var(--secondary);
     span {
         background-color: var(--secondary-ripple);
     }
 }
-button.success{
+button.simple-btn.success{
     background-color: var(--success);
     span {
         background-color: var(--success-ripple);
     }
 }
-button.failed{
+button.simple-btn.failed{
     background-color: var(--failed);
     span {
         background-color: var(--failed-ripple);
