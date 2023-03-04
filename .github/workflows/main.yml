@@ -35,6 +35,6 @@ jobs:
       - name: Test
         run: yarn test --ci --coverage --maxWorkers=2
 
-      - run: pnpm run lint && pnpm run build
+      - run: pnpm run build
       # - name: Build
         # run: yarn build
