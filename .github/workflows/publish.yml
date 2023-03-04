@@ -6,6 +6,10 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs: 
   build_publish:
+    permissions:
+      contents: write # to create release 
+      issues: write # to post issue comments
+      pull-requests: write # to create pull request 
     runs-on: "ubuntu-latest"
     steps:
       - name: Checkout repo
@@ -29,23 +33,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.WORKFLOW_NPM_TOKEN }}
         with:
-          publish: pnpm publish --access public
-
-      # Read version changelog
-      - id: get-changelog
-        name: Get version changelog
-        uses: superfaceai/release-changelog-action@v1
-        with:
-          path-to-changelog: CHANGELOG.md
-          version: ${{ env.NEW_VERSION }}
-          operation: read
-
-      # Update GitHub release with changelog
-      - name: Update GitHub release documentation
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: ${{ env.NEW_VERSION }}
-          body: ${{ steps.get-changelog.outputs.changelog }}
-          prerelease: ${{ startsWith(github.event.inputs.release-type, 'pre') }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}
+          # publish: pnpm publish --access public
+          publish: pnpm release
+          version: pnpm version-packages
