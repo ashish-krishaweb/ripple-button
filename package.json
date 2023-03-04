@@ -10,6 +10,20 @@
   "files": [
     "dist"
   ],
+  "homepage": "https://github.com/ashish-krishaweb/ripple-button",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashish-krishaweb/ripple-button.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "material button",
+    "event delegation model",
+    "small bundle size",
+    "material ripple effect",
+    "ripple button"
+  ],
   "scripts": {
     "analyze": "size-limit --why",
     "build": "dts build",
