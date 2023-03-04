@@ -186,4 +186,62 @@ An alternative to fixing this problem would be to remove aliases altogether and 
 
 #### Simple and high performance react library for creating the button with ripple effect 
 
-## Usage with React
+## Installation
+
+
+
+```bash
+$ npm install super-duper-button   # for npm users
+$ yarn add super-duper-button      # for yarn users
+$ pnpm install super-duper-button  # for pnpm users
+```
+
+
+## Examples For using in React
+<br/>
+<hr />
+
+### Typescript
+
+```tsx
+// Component.tsx
+import { RippleButton } from "super-duper-button";
+
+export default function Component(){
+
+    const handleClick: () => void = () => {
+        console.log("click handler");
+    };
+
+    return (
+        <div>
+            <RippleButton handleClick={handleClick} variant="primary">this is text</RippleButton>
+        </div>
+    )
+};
+```
+
+### Javascript
+```jsx
+// Component.jsx
+import { RippleButton } from "super-duper-button";
+
+export default function Component(){
+
+    const handleClick = () => {
+        console.log("click handler");
+    };
+
+    return (
+        <div>
+            <RippleButton handleClick={handleClick} variant="primary">this is text</RippleButton>
+        </div>
+    )
+};
+```
+
+**IMPORTANT**: For using this library in NextJS, use the below import syntax
+```jsx
+import dynamic from "next/dynamic"
+const RippleButton = dynamic(() => import("super-duper-button").then(d => d.RippleButton))
+```
