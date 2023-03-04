@@ -1,5 +1,11 @@
 # super-duper-button
 
+## 0.2.8
+
+### Patch Changes
+
+- 865d562: update
+
 ## 0.2.7
 
 ### Patch Changes
