@@ -33,4 +33,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.WORKFLOW_NPM_TOKEN }}
         with:
-          # publish: pnpm publish --access public
+          publish: pnpm publish --access public
