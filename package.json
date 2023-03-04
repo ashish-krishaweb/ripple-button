@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "Ashish Prajapati",
   "main": "dist/index.js",
-  "module": "dist/ripple-button.esm.js",
+  "module": "dist/super-duper-button.esm.js",
   "typings": "dist/index.d.ts",
   "private": false,
   "files": [
@@ -43,11 +43,11 @@
   },
   "size-limit": [
     {
-      "path": "dist/ripple-button.cjs.production.min.js",
+      "path": "dist/super-duper-button.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/ripple-button.esm.js",
+      "path": "dist/super-duper-button.esm.js",
       "limit": "10 KB"
     }
   ],
