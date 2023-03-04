@@ -6,10 +6,7 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs: 
   build:
-    name: "Building and publishing the package to npm"
-    
     runs-on: "ubuntu-latest"
-    
      steps:
       - name: Checkout repo
         uses: actions/checkout@v3
