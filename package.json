@@ -1,6 +1,6 @@
 {
   "name": "super-duper-button",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "author": "Ashish Prajapati",
   "main": "dist/index.js",

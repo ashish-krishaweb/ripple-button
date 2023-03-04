@@ -1,5 +1,11 @@
 # super-duper-button
 
+## 0.3.1
+
+### Patch Changes
+
+- e4b6a97: update in css
+
 ## 0.3.0
 
 ### Minor Changes
