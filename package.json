@@ -44,11 +44,11 @@
   "size-limit": [
     {
       "path": "dist/super-duper-button.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "5000 ms"
     },
     {
       "path": "dist/super-duper-button.esm.js",
-      "limit": "10 KB"
+      "limit": "5000 ms"
     }
   ],
   "devDependencies": {
