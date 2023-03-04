@@ -1,5 +1,11 @@
 # super-duper-button
 
+## 0.3.0
+
+### Minor Changes
+
+- a78988f: adding new simple button component
+
 ## 0.2.8
 
 ### Patch Changes
