@@ -1,6 +1,6 @@
 {
-  "name": "@simple/ripple-button",
-  "version": "0.1.0",
+  "name": "super-duper-button",
+  "version": "0.2.5",
   "license": "MIT",
   "author": "Ashish Prajapati",
   "main": "dist/index.js",
@@ -53,6 +53,7 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.21.0",
+    "@changesets/cli": "^2.26.0",
     "@size-limit/preset-small-lib": "^8.2.4",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-info": "^5.3.21",
