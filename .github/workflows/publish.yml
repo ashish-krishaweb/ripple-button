@@ -6,7 +6,6 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs: 
   build:
-    name: "Building and publishing the package to npm"
     
     runs-on: ${{ matrix.os }}
     strategy:
