@@ -6,13 +6,9 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs: 
   build:
+    name: "Building and publishing the package to npm"
     
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        node: ['14.x', '16.x']
-        os: [ubuntu-latest, windows-latest, macOS-latest]
-
+    runs-on: "ubuntu-latest"
     
      steps:
       - name: Checkout repo
@@ -22,10 +18,9 @@ jobs:
         with:
           version: 7 
         
-      - name: Use Node ${{ matrix.node }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 14.x
           cache: "pnpm"
       
 
