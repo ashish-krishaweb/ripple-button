@@ -34,5 +34,3 @@ jobs:
           NPM_TOKEN: ${{ secrets.WORKFLOW_NPM_TOKEN }}
         with:
           # publish: pnpm publish --access public
-          publish: pnpm release
-          version: pnpm version-packages
