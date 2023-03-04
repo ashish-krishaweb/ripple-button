@@ -40,15 +40,16 @@ if (typeof window != 'undefined') {
 
 const TargetMap = new Map();
 
+interface IButtonProps extends React.HTMLAttributes<HTMLButtonElement>{
+  handleClick?: () => void
+  variant?: 'primary' | 'secondary' | 'alert' | 'success' | 'failed' | 'disabled';
+} 
+
 export default function RippleButton({
   handleClick,
   children,
   variant = 'primary',
-}: {
-  handleClick?: () => void;
-  children: React.ReactNode;
-  variant?: 'primary' | 'secondary' | 'alert' | 'success' | 'failed' | 'disabled';
-}) {
+}: IButtonProps) {
   const id = React.useId();
 
   return (
