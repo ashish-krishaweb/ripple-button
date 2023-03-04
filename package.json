@@ -27,7 +27,7 @@
     }
   },
   "prettier": {
-    "printWidth": 80,
+    "printWidth": 120,
     "semi": true,
     "singleQuote": true,
     "trailingComma": "es5"
@@ -44,11 +44,11 @@
   "size-limit": [
     {
       "path": "dist/super-duper-button.cjs.production.min.js",
-      "limit": "5000 ms"
+      "limit": "10kb"
     },
     {
       "path": "dist/super-duper-button.esm.js",
-      "limit": "5000 ms"
+      "limit": "10kb"
     }
   ],
   "devDependencies": {
