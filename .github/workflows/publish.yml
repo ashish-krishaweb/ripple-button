@@ -6,10 +6,6 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs: 
   build_publish:
-    permissions:
-      contents: write # to create release 
-      issues: write # to post issue comments
-      pull-requests: write # to create pull request 
     runs-on: "ubuntu-latest"
     steps:
       - name: Checkout repo
